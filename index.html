@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Imran Khan — A Life in Chapters</title>
+  <meta name="description" content="An animated documentary-style timeline exploring major chapters of Imran Khan's public life.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div class="progress"><span id="bar"></span></div>
+  <div class="scene-bg"></div>
+  <div class="grain"></div>
+
+  <header class="top">
+    <span class="kicker">DOCUMENTARY • TIMELINE</span>
+    <button id="mute">🔊</button>
+  </header>
+
+  <main>
+
+    <section class="intro" id="intro">
+      <p class="eyebrow">A LIFE IN CHAPTERS</p>
+      <h1>Imran Khan</h1>
+      <p class="sub">From cricket fields to public life</p>
+
+      <button class="start" id="start">
+        ▶ Start Story
+      </button>
+
+      <p class="note">
+        A neutral, documentary-style visual timeline.
+      </p>
+    </section>
+
+    <section class="story hidden" id="story">
+
+      <div class="counter" id="counter">
+        01 / 16
+      </div>
+
+      <div class="year" id="year"></div>
+
+      <h2 id="title"></h2>
+
+      <p id="text"></p>
+
+      <div class="visual" id="visual"></div>
+
+      <div class="controls">
+        <button id="prev">←</button>
+        <button id="pause">Ⅱ</button>
+        <button id="next">→</button>
+      </div>
+
+      <div class="caption" id="caption"></div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
